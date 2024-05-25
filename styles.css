@@ -1,0 +1,1002 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+}
+.body{
+  padding-top: 50px;
+  opacity: 100%;
+
+}
+/* -----------------------------------------NavBar ---------------------------------------*/
+.sidebar {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 0.1em 2em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Fixes the navbar's position relative to the viewport */
+  top: 0; /* Aligns the navbar to the top */
+  left: 0; /* Aligns the navbar to the left */
+  width: 97.1%;
+  z-index: 1000; /* Ensures the navbar stays on top of other page elements */
+  /* Add other styles like background-color, height, etc. */
+}
+
+.logo-img {
+  display: block;
+  width: 19%; /* Adjust the size as necessary */
+  height: 19%; /* Adjust the size as necessary */
+  position: relative;
+  top: 15px;
+}
+
+.logo-text {
+  font-size: 1.5em;
+  color: white;
+  position: relative;
+  left: 20%;
+  bottom: 25px;
+  z-index: 1;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color:white;
+  font-size: 1em;
+  margin-left: 2em;
+}
+
+.navbar-links a:hover {
+  color:wheat;
+}
+.Whitepaper{
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: transparent;
+  border: 4px solid white; /* Example: white border, 2 pixels wide */
+  border-radius: 20px;
+  border-width: 2px;
+  border-spacing: 100px;
+  overflow-x: inherit;
+  position: relative;
+  letter-spacing: 0.5px;
+  left: 7px;
+  top: 5px;
+  font-size: small;
+  padding: 6px;
+  text-size-adjust: initial;
+  font-size:16.5px ;
+}
+.strong{
+  font-size: 13px;
+  width: 9%;
+  text-align: center;
+  position: relative;
+}
+.Whitepaper:hover{
+  background-color: white;
+  border: 4px solid black; /* Example: white border, 2 pixels wide */
+  color: black;
+  
+}
+.Discord{
+  display: block;
+  width: 45px; /* Adjust the size as necessary */
+  height: 45px; /* Adjust the size as necessary */
+  margin-left: 100px; /* Adjust the spacing as necessary */
+  position: absolute;
+  right: 160px;
+  bottom: 15.9px;
+}
+.X{
+  display: block;
+  width: 60px; /* Adjust the size as necessary */
+  height: 60px; /* Adjust the size as necessary */
+  margin-left: 100px; /* Adjust the spacing as necessary */
+  position: absolute;
+  right: 210px;
+  bottom: 9.2px;
+}
+
+.nav-center {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* This will center the logo vertically and horizontally */
+  position: absolute;
+  right: 160px;
+  left: 4px;
+  
+}
+.OpenSea {
+  /* You can specify a width or height if you want to size your logo */
+  height: 50px; /* Example height for your logo */
+  width: auto; /* Maintain the aspect ratio */
+  position: relative;
+  right: -80px;
+  top: 4px;
+  align-content: center;
+
+}
+
+.BBX{
+  /* You can specify a width or height if you want to size your logo */
+  height: 69px; /* Example height for your logo */
+  width: auto; /* Maintain the aspect ratio */ 
+  position: relative;
+  left: 85px  ;
+
+}
+.X:hover{
+  transform: scale(1.10);
+}
+.Discord:hover{
+  transform: scale(1.10);
+}
+.OpenSea:hover{
+  transform: scale(1.10);
+}
+.BBX:hover{
+  transform: scale(1.10);
+}
+.Discord:hover{
+  transform: scale(1.10);
+}
+/* -----------------------------------------INTRO SECTION ---------------------------------------*/
+
+/* ... your existing navbar styles ... */
+
+.intro-section {
+  height: 100vh; /* Takes the full height of the viewport */
+  background-image: url("https://i.ibb.co/1nHX8fC/Banner-BLH-UPDATED.jpg"); /* Corrected path to your banner image */
+  background-size: cover;
+  filter: blur();
+  background-blend-mode:screen;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: -1px;
+  text-shadow: 1cm;
+}
+.intro-section .background-image{
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.intro-content h1{
+  text-shadow: black;
+  filter: blur(0);
+  -webkit-filter: blur(0);
+  position: relative;
+  bottom: 100px;
+
+}
+.intro-section p{
+  text-shadow: black;
+  filter: blur(0);
+  -webkit-filter: blur(0);
+  position: relative;
+  bottom: 100px;
+
+}
+
+.responsive-imagetp{
+  position: relative;
+  bottom: 100px;
+}
+.intro-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here (0.5 = 50% opacity) */
+  z-index: -1px;
+}
+/* ... your existing intro-section styles ... */
+
+.intro-content{
+  position: relative;
+  z-index: 1;
+  filter: blur(-5px);
+}
+.intro-content h1 {
+  font-size: 4em; /* Large text size for the heading */
+  margin-bottom: 0.5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+  text-decoration-color: white;
+  color: white;
+  filter: blur(-5px);
+  -webkit-filter: blur(-5px);
+}
+
+.intro-content p {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  color: white;
+  filter: blur(-5px);
+  -webkit-filter: blur(-5px);
+}
+
+.intro-button {
+  padding: 1em 2em;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  background-color: transparent;
+}
+
+.intro-button:hover {
+  transform: scale(1.03);
+}
+.intro-button:focus-visible {
+opacity: 50%;
+}
+.EXPL_BTN{
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* The text color will be inherited from the parent element, or you can set a specific color */
+  background-color: transparent;
+  border: none; /* Removes the border */
+  border-radius: 5px; /* Optional: if you want rounded corners */
+  display: inline-block; /* Allows you to set padding and width/height as needed */
+  cursor: pointer; 
+}
+
+/* ------------------------------------------------BACKGROUND---------------------------*/
+
+:root {
+  --background-image: url("https://i.ibb.co/pZGSdGt/bg-2.jpg");
+}
+.below-banner-background {
+  background-image:var(--background-image); /* Specify the path to your background imag linear-gradient(rgb(37, 41, 53),rgb(75, 69, 69),rgb(15, 15, 37));
+ /* Specify the path to your background image */
+    justify-content: start;
+    background-position: center center; /* Center the image in the container */
+    background-repeat: no-repeat; /* The image should not repeat */
+    background-size: 310%;
+    background-blend-mode: multiply;
+    align-items: center;
+    background-position: center;
+    opacity: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+.background-image{
+  opacity: 50%;
+}
+
+
+/*------------------------------------------VIEW MORE BTN----------------------------------------*/
+.VM_BTN{
+  padding: 0.5em 0.5em;
+  font-size: .9em;
+   /* Green color for the button */
+  border: none;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  position: right right;
+  float: right; 
+  padding: 0.2em 0.2em;
+  width: 160px; /* Adjust width as needed, or use a fixed width like 'width: 200px;' */
+  height: 60px; /* Maintains the aspect ratio */
+  position: absolute; /* or 'relative', 'fixed', or 'sticky' */
+  left: 0.;
+
+}
+
+.VM_BTN img{
+  padding: 0.2em 0.2em;
+  width: 160px; /* Adjust width as needed, or use a fixed width like 'width: 200px;' */
+  height: 55px; /* Maintains the aspect ratio */
+  position: absolute; /* or 'relative', 'fixed', or 'sticky' */
+  float: right;
+}
+.button-link {
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* The text color will be inherited from the parent element, or you can set a specific color */
+  background-color: transparent; /* Background color for your button */
+  padding: 10px 20px; /* Padding inside the button */
+  border: none; /* Removes the border */
+  border-radius: 5px; /* Optional: if you want rounded corners */
+  display: inline-block; /* Allows you to set padding and width/height as needed */
+  cursor: pointer; /* Changes the mouse cursor to indicate it's clickable */
+  
+  /* Add any other button styling you want here, such as font size, weight, etc. */
+}
+
+/* Optionally, add hover effects */
+.button-link:hover {
+text-decoration: underline; /* Darker shade on hover */
+}
+.responsive-image {
+  width: 100%; /* Adjust width as needed, or use a fixed width like 'width: 200px;' */
+  height: 100%; /* Maintains the aspect ratio */
+  position: absolute; /* or 'relative', 'fixed', or 'sticky' */
+  top: 30px; /* Distance from the top */
+  left: 636px; /* Distance from the left */
+  right: 50px;
+  justify-content: center;
+  display: flex;
+  bottom: 70px;
+  justify-content: center; /* Align horizontal */
+  align-items: center; /* Align vertical */
+  height: 8vh; /* Full height of the viewport */
+  width: 12vw; /* Full width of the viewport */  
+}
+.responsive-image1{
+  width: 100%; /* Adjust width as needed, or use a fixed width like 'width: 200px;' */
+  height: 100%; /* Maintains the aspect ratio */
+  position: absolute; /* or 'relative', 'fixed', or 'sticky' */
+  top: 50px; /* Distance from the top */
+  left: 700px; /* Distance from the left */
+  right: 50px;
+  display: flex;
+  justify-content: center;
+  bottom: 70px;
+  justify-content: center; /* Align horizontal */
+  align-items: center; /* Align vertical */
+  height: 8vh; /* Full height of the viewport */
+  width: 12vw; /* Full width of the viewport */
+}
+/* -----------------------------------------NFTs ---------------------------------------*/
+
+/* Add to your existing CSS */
+
+
+.collections-section {
+  padding: 2em;
+  justify-content: start;
+  background-position: center center; /* Center the image in the container */
+  background-repeat: no-repeat; /* The image should not repeat */
+  background-size: cover;
+  margin-top: 70px;
+  opacity: 100%;
+
+}
+
+.collections-section h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: gold;
+  text-align: left;
+}
+
+
+.collections-container h2{
+  color: silver;
+  font-size: 2em;
+  margin-bottom: 1em;
+  text-align: left;
+  margin-left: 25px;
+}
+.Bronze-collections h2{
+  color: rgba(92, 34, 7, 0.932);
+  font-size: 2em;
+  margin-bottom: 1em;
+  text-align: left;
+  margin-left: 25px;
+}
+
+.collections-container{
+  padding: 2em;
+ /* Light background for the section */
+  justify-content: start;
+  margin-top: 70px;
+  position: relative;
+}
+.Platinum-collections{
+  padding: 2em;
+  justify-content: start;
+  background-position: center center; /* Center the image in the container */
+  background-repeat: no-repeat; /* The image should not repeat */
+  background-size: cover;
+  margin-top: 70px;
+  
+}
+.Bronze-collections{
+  padding: 2em;
+  justify-content: start;
+  background-position: center center; /* Center the image in the container */
+  background-repeat: no-repeat; /* The image should not repeat */
+  background-size: cover;
+  margin-top: 70px;
+}
+
+.Diamond-collections h2{
+  color: rgba(185, 242, 255);
+  mix-blend-mode: lighten;
+  font-size: 2em;
+  margin-bottom: 1em;
+  text-align: justify;
+  margin-left: 40px;
+}
+.Diamond-collections p{
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  margin-top: 90px;
+  margin-right: 200px;
+}
+
+.Rogue-collections h2{
+  color: rgb(218, 86, 46);
+  mix-blend-mode: lighten;
+  font-size: 2em;
+  margin-bottom: 1em;
+  text-align: justify;
+  margin-left: 40px;
+}
+.Rogue-collections p{
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  margin-top: 90px;
+  margin-right: 200px;
+}
+.Diamond-collections{
+  margin-top: 130px;
+}
+
+.Rogue-collections{
+  margin-top: 70px;
+
+}
+/* -----------------------------------------GALLERY ---------------------------------------*/
+.Gold {
+  display: block; /* Ensures the heading is on its own line */
+  position: relative; /* Allows absolute positioning of children */
+  margin-bottom: 10px; /* Adds space below the heading before the gallery */
+}
+
+.gold-line {
+  display: block; /* Ensures the span is treated as a block element */
+  position: absolute; /* Absolute positioning relative to the Gold heading */
+  bottom: -5px; /* Positioning below the text */
+  left: 0; /* Starts at the beginning of the Gold heading */
+  width: 250px; /* Length of the line */
+  height: 5px; /* Thickness of the line */
+  background-color: gold; /* Color of the line */
+}
+.nft-gallery {
+  display: flex; /* Aligns items side by side */
+  justify-content: center; /* Center the items in the container */
+  gap: 100px; /* Space between each item */
+  justify-content: start;
+  display: inline-block;
+  border: 1px solid gold; /* Example: white border, 2 pixels wide */
+  border-radius: 15px;
+  overflow-x: hidden;
+  justify-content: start; /* Aligns items at the start of the container */
+  margin-top: 2%
+}
+.nft-gallery2{
+  display: flex; /* Aligns items side by side */
+  justify-content: center; /* Center the items in the container */
+  gap: 100px; /* Space between each item */
+  justify-content: start;
+  display: inline-block;
+  border: 2px solid silver; /* Example: white border, 2 pixels wide */
+  border-radius: 15px;
+  overflow-x: hidden;
+  margin-top: 2%
+
+}
+.Platinum{
+  display: block; /* Ensures the heading is on its own line */
+  position: relative; /* Allows absolute positioning of children */
+  margin-bottom: 10px; /* Adds space below the heading before the gallery */
+  color: rgb(167, 156, 139);
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.PLT-line{
+  display: block; /* Ensures the span is treated as a block element */
+  position: absolute; /* Absolute positioning relative to the Gold heading */
+  bottom: -5px; /* Positioning below the text */
+  left: 0; /* Starts at the beginning of the Gold heading */
+  width: 250px; /* Length of the line */
+  height: 5px; /* Thickness of the line */
+  background-color: rgb(167, 156, 139); /* Color of the line */
+}
+.SLV-line{
+  display: block; /* Ensures the span is treated as a block element */
+  position: absolute; /* Absolute positioning relative to the Gold heading */
+  bottom: -5px; /* Positioning below the text */
+  left: 0; /* Starts at the beginning of the Gold heading */
+  width: 250px; /* Length of the line */
+  height: 5px; /* Thickness of the line */
+  background-color: silver; /* Color of the line */
+}
+.Silver{
+  display: block; /* Ensures the heading is on its own line */
+  position: relative; /* Allows absolute positioning of children */
+  margin-bottom: 10px; /* Adds space below the heading before the gallery */
+}
+.BRZ-line{
+  display: block; /* Ensures the span is treated as a block element */
+  position: absolute; /* Absolute positioning relative to the Gold heading */
+  bottom: -5px; /* Positioning below the text */
+  left: 0; /* Starts at the beginning of the Gold heading */
+  width: 250px; /* Length of the line */
+  height: 5px; /* Thickness of the line */
+  background-color: rgba(92, 34, 7, 0.932); /* Color of the line */
+}
+.Bronze{
+  display: block; /* Ensures the heading is on its own line */
+  position: relative; /* Allows absolute positioning of children */
+  margin-bottom: 10px; /* Adds space below the heading before the gallery */
+}
+.nft-gallery3{
+  display: flex; /* Aligns items side by side */
+  justify-content: center; /* Center the items in the container */
+  gap: 20px; /* Space between each item */
+  justify-content: start;
+  display: inline-block;
+  border: 2px solid rgba(92, 34, 7, 0.932); /* Example: white border, 2 pixels wide */
+  border-radius: 15px;
+  overflow-x: hidden;
+  margin-top: 2%
+
+}
+
+.nft-gallery4{
+  display: flex; /* Aligns items side by side */
+  justify-content: center; /* Center the items in the container */
+  gap: 20px; /* Space between each item */
+  justify-content: start;
+  display: inline-block;
+  border:2px solid rgb(167, 156, 139); /* Example: white border, 2 pixels wide */
+  border-radius: 15px;
+  overflow-x: hidden;
+  margin-top: 2%
+}
+
+/* --------------------------------------------NFT STYLING----------------------------------------------*/
+
+.nft-card {
+  width: 185px; /* Width of each card */
+  border-radius: 10px; /* Rounded corners for the cards */
+  overflow: hidden; /* Ensures contents fit within the corners */
+  background-color: #1a1a1a; /* Background color for the card */
+  color: white; /* Text color */
+  position: relative; /* Needed for absolute positioning of the multiplier */
+  flex: 0 0 auto;
+  overflow-x: auto;
+  margin: 0 5px;
+  transition: transform 0.3s ease;
+  margin: 5px; /* Example initial margin */
+}
+
+.nft-multiply {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 0.8em;
+}
+
+.nft-card img {
+  width: 70%; /* Make the image take up the full width of the card */
+  height: 70%; /* Maintain aspect ratio */
+  display: block; /* Remove extra space below image */
+  transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+  transform-origin: center center;
+  align-content: center;
+  justify-content: center; /* Centers image horizontally */
+  align-items: center;
+}
+
+.nft-details {
+  padding: 10px;
+  position: relative;
+  text-align: center; /* Center the text */
+  z-index: 1; /* Make sure this is less than z-index on hover */
+  transition: z-index 0s, opacity 1 ease; /* Delay the z-index transition until after hover effect */
+  color: white;
+}
+
+/* -----------------------------------------DETAILS ---------------------------------------*/
+
+.nft-details h3 {
+  font-size: 1em; /* Set font size */
+  margin: 10px 0; /* Space above and below */
+  color: white;
+}
+
+.nft-details p {
+  font-size: 0.9em; /* Set font size */
+  margin: 0; /* Remove default paragraph margin */
+}
+/* -----------------------------------------HOVER EFFECT ---------------------------------------*/
+
+/*.nft-gallery:hover{
+  position : relative;
+  top: -4px;
+  zoom: 1.3;
+}*/
+
+.nft-card:hover img {
+  /*transform: scale(1.25); /* Increase the scale to 105% when hovering */
+  transform: scale(1.05);
+}
+.nft-card:hover {
+  z-index: 2; /* Higher than the non-hover state to bring forward */
+  /* You can also add other styles here for the hover effect, like a change in background or text color */
+}
+.nft-details:hover{
+  z-index: -3;
+  transition: none;
+}
+.nft-card {
+  display: block; /* Make sure the anchor behaves as a block to contain all elements */
+  text-decoration: none; /* Remove default underline */
+  color: inherit; /* Keep text color consistent */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for effects */
+  overflow: hidden;
+}
+
+.nft-card:hover .nft-image  {
+  transform: scale(1.05); /* Scale the image up slightly on hover */  box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Add shadow for better visibility on hover */
+  margin: 5px; /* Reduces the margin on hover */
+  justify-content: center; /* Centers image horizontally */
+  align-items: center;
+}
+
+.nft-card img {
+  width: 100%; /* Ensure images take full width of the card */
+  display: flex; /* Remove space beneath images */
+  transform-origin: center;
+  justify-content: center; /* Centers image horizontally */
+  align-items: center;
+}
+
+.nft-details {
+  padding: 10px; /* Padding inside the details box */
+  text-align: center; /* Center the text */
+}
+
+.nft-image-container {
+  display: flex;
+  justify-content: center; /* Centers image horizontally */
+  align-items: center; /* Centers image vertically */
+  height: 300px; /* Adjust based on your image height */
+  width: 300px;
+}
+
+.nft-image {
+  max-width: 100%; /* Ensures the image doesn't exceed the container width */
+  max-height: 100%; /* Ensures the image doesn't exceed the container height */
+  transition: transform 0.3s ease; /* For a smooth scaling transition */
+}
+
+/* ------------------------------------------------FOOTER---------------------------*/
+
+.footer {
+  background-color: transparent 50%;
+  background-size: cover; /* This will cover the entire area of the footer */
+  color: white; /* Light text color */
+  padding: 2rem; /* Padding around the footer content */
+  display: flex; /* Creates a flexbox layout */
+  flex-wrap: wrap; /* Allows the content to wrap on smaller screens */
+  gap: 1rem; /* Spacing between footer sections */
+  justify-content: space-between; /* Spacing out the sections */
+  align-items: stretch; /* Stretches the footer items to fill the height */
+  width: 100%; /* Ensure the footer stretches across the full width */
+  margin-right: 2000px;
+  margin-top: 60px;
+  margin-left: -40px;
+}
+
+.footer-section h2 {
+  margin-top: 0; /* Removes default margin from headings */
+  color: white;
+  margin-left: 40px;
+}
+.footer-section p{
+  margin-left: 40px;
+  text-align: justify;
+
+}
+.Social{
+  margin-right: 200px;
+  color: white;
+}
+.Social2{
+  margin-right: 220px;
+  color: white;
+  text-align: justify;
+}
+.footer-section ul {
+  list-style: none; /* Removes default list styling */
+  padding: 0; /* Removes default padding */
+  margin-left: 45px;
+  color: white;
+}
+
+.footer-section ul li {
+  padding: 0.25rem 0; /* Adds some vertical space between list items */
+  text-align: justify;
+  text-decoration: none;
+
+}
+.Open-sea{
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* The text color will be inherited from the parent element, or you can set a specific color */
+  background-color: transparent; /* Background color for your button */
+  border: none; /* Removes the border */
+  border-radius: 5px; /* Optional: if you want rounded corners */
+  display: inline-block; /* Allows you to set padding and width/height as needed */
+  cursor: pointer; /* Changes the mouse cursor to indicate it's clickable */
+}
+.Open-sea:hover {
+  text-decoration: underline; /* Darker shade on hover */
+}
+/* Responsive layout adjustments */
+
+
+.your-container {
+  position: relative; /* Needed for absolute positioning of the pseudo-element */
+  /* Other styles */
+}
+
+/* Pseudo-element for background image with opacity */
+.your-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(/src/bg.jpg);
+  background-size: 210%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-blend-mode: color-burn;
+  opacity: 0.5; /* Set the opacity of the background image */
+  z-index: -1; /* Ensure it stays behind the content */
+}
+
+/* Your existing styles */
+.your-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background: linear-gradient(rgba(36, 36, 80, 0.5)); /* Example gradient with adjusted opacity */
+  /* Other styles... */
+}
+
+.footerTHMB{
+  z-index: 1;
+  overflow: visible;
+  width:100%;
+  height: 100%;
+}
+.logo-img1{
+  width:9%;
+  height: 9%;
+  position: relative;
+  left: 100px;
+}
+
+/* ------------------------------------------------SIZE ADJUST---------------------------*/
+
+/* Base styles that apply to all sizes */
+@media screen and (max-width:1436px){
+  .navbar{
+    padding: em 1.5em;
+  }
+  .collections-section h2 .Gold .gold-line{
+    text-align: center;
+  }
+
+    .below-banner-background{
+      background-color: black;
+    }
+}
+@media (max-width: 1000px) {
+
+}
+@media screen and (max-width:1177px){
+  .VM_BTN{
+    position: relative;
+    right: 69%;
+    height: auto;
+    width: 49%;
+    }
+    .Whitepaper{
+      position: relative;
+      margin-right: 5px;
+    }
+  
+}
+@media screen and (max-width:1074px){
+  .Whitepaper{
+    margin-right: 10px;
+  }
+  .nft-gallery{
+    justify-content: center;
+    justify-content: start;
+    position: relative;
+    left: 30%;
+  }
+  .collections-section{
+    width: 70%;
+  }
+  .collections-section h2{
+    text-align: justify left;
+    position: relative;
+    left: 8%;
+  }
+  .collections-container{
+    width: 70%;
+  }
+  .nft-gallery2{
+    justify-content: center;
+    justify-content: start;
+    position: relative;
+    left: 30%;
+  }
+  .Bronze-collections{
+    width: 70%;
+  }
+  .nft-gallery3{
+    justify-content: center;
+    justify-content: start;
+    position: relative;
+    left: 30%;
+  }
+  .VM_BTN{
+    position: relative;
+    right: 570px;
+    height: auto;
+    width: 49%;
+    }
+}
+
+@media screen and (max-width:984px){
+.intro-section .intro-content h2{
+  padding: 2em 2em;
+}
+
+.intro-content h2{
+  padding: 2em 2em;
+}
+.intro-content p{ 
+  padding: 0.05em 0.05em;
+  font-size: 20px;
+}
+body{
+  padding: 0.1px 0.1px;
+}
+.intro-section{
+    padding: 1em 1.5em;
+}
+.VM_BTN{
+  position: relative;
+  right: 570px;
+  margin-right: 100%;
+  width: 49%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  }
+}
+@media screen and (max-width:846px){
+  body{
+    padding: 0.0001% 0.0001%;
+  }
+  .intro-section{
+    padding: 0.5em 0.5em;
+  }
+}
+@media screen and (max-width:811px){
+  .nft-gallery{
+    justify-content: center;
+    justify-content: start;
+    position: relative;
+    margin-right: 20px;
+  }
+  .collections-section{
+    width: 70%;
+    position: relative;
+    right: 20px;
+  }
+}
+
+@media (max-width: 747px) {
+  .banner{
+      min-height: 200px; /* Slightly smaller but still reasonable */
+      background-size: 100% auto; /* Adjust background size to prevent over-scaling */
+  }
+
+  .content, .other-elements, .below-banner-background {
+      min-width: 300px; /* Minimum width for other content elements */
+      padding: 10px; /* Ensure padding is appropriate for smaller screens */
+  }
+.nav-center{
+  display: none;
+}
+.navbar-links{
+  display: none;
+}
+.Discord {
+  display: none;
+}
+.X {
+  display: none;
+}
+.logo-text{
+  position: relative;
+  left: 100px;
+  font-size: 150%;
+  margin-right: 20%;
+}
+.logo-img{
+  position: relative;
+  left: 20px;
+}
+
+.intro-content h2{
+  padding: 2em 2em;
+}
+.intro-content p{ 
+  padding:0;
+  font-size: 20px;
+}
+}
+@media (max-width: 647px) {
+  .nft-gallery{
+    justify-content: center;
+    justify-content: start;
+    position: relative;
+    margin-right: 20px;
+  }
+  .collections-section{
+    width: 90%;
+    position: relative;
+    right: 60px;
+  }
+}
+@media (max-width: 492px) {
+  .VM_BTN{
+    position: relative;
+    right: 700px;
+    margin-right: 100%;
+    width: 49%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    }
+}
+
+@media (max-width: 492px) {
+  .navbar{
+    padding: 0.01px 1.5em;
+  }
+}
